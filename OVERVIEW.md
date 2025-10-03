@@ -6,7 +6,7 @@ Shopizer v1 is a comprehensive Java-based e-commerce platform designed to provid
 
 ## License
 
-The application is distributed under the GNU Lesser General Public License (LGPL) version 3. shopizer_v1:1-5 
+The application is distributed under the GNU Lesser General Public License (LGPL) version 3.
 
 ## Architecture
 
@@ -14,8 +14,8 @@ The application is distributed under the GNU Lesser General Public License (LGPL
 
 The application is organized into four main modules:
 
-1. **sm-core** - Core business logic and entity definitions shopizer_v1:3-5 
-2. **sm-central** - Administrative web application shopizer_v1:4-4 
+1. **sm-core** - Core business logic and entity definitions 
+2. **sm-central** - Administrative web application
 3. **sm-shop** - Customer-facing storefront web application
 4. **schema** - Database schema and setup scripts
 
@@ -23,11 +23,11 @@ The application is organized into four main modules:
 
 The platform leverages several enterprise Java technologies:
 
-- **Struts 2** - Web application framework shopizer_v1:22-24 
-- **Hibernate** - Object-relational mapping shopizer_v1:28-30 
-- **Spring Framework** - Dependency injection and configuration shopizer_v1:34-36 
-- **Apache Tiles** - Layout management shopizer_v1:30-32 
-- **JAX-WS** - Web services support shopizer_v1:43-45 
+- **Struts 2** - Web application framework
+- **Hibernate** - Object-relational mapping
+- **Spring Framework** - Dependency injection and configuration
+- **Apache Tiles** - Layout management
+- **JAX-WS** - Web services support
 
 ## Core Components
 
@@ -35,8 +35,8 @@ The platform leverages several enterprise Java technologies:
 
 The core module contains comprehensive business entities organized by domain:
 
-- **Catalog Management** - Products, categories, pricing, and reviews shopizer_v1:1-1 
-- **Order Management** - Shopping cart, orders, and order processing shopizer_v1:1-1 
+- **Catalog Management** - Products, categories, pricing, and reviews
+- **Order Management** - Shopping cart, orders, and order processing
 - **Customer Management** - Customer accounts and profiles
 - **Merchant Operations** - Store configuration and management
 - **Payment Processing** - Payment gateway integrations
@@ -44,7 +44,7 @@ The core module contains comprehensive business entities organized by domain:
 
 ### Service Layer
 
-The platform implements a comprehensive service layer with dedicated services for each business domain: shopizer_v1:1-1 
+The platform implements a comprehensive service layer with dedicated services for each business domain:
 
 - Catalog services
 - Order management services  
@@ -57,9 +57,9 @@ The platform implements a comprehensive service layer with dedicated services fo
 
 The platform supports multiple database systems:
 
-- **MySQL** - Primary recommended database shopizer_v1:6-33 
-- **Oracle** - Enterprise database support shopizer_v1:36-55 
-- **HSQLDB** - Development and testing database shopizer_v1:1-1 
+- **MySQL** - Primary recommended database
+- **Oracle** - Enterprise database support
+- **HSQLDB** - Development and testing database
 
 ## Web Applications
 
@@ -75,7 +75,7 @@ The central administration application provides comprehensive management capabil
 - Tax management
 - Reporting and analytics
 
-The admin interface includes security features with custom authentication filtering. shopizer_v1:11-19 
+The admin interface includes security features with custom authentication filtering.
 
 ### Customer Storefront (sm-shop)
 
@@ -91,18 +91,18 @@ The shop application provides the customer-facing e-commerce functionality inclu
 
 ### Build System
 
-The platform uses Apache Ant for build automation with dedicated build scripts for each module. shopizer_v1:1-6 
+The platform uses Apache Ant for build automation with dedicated build scripts for each module.
 
 ### Requirements
 
-- **JDK 1.5 or higher** shopizer_v1:3-4 
-- **Apache Ant 1.6 or higher** shopizer_v1:3-4 
+- **JDK 1.5 or higher**
+- **Apache Ant 1.6 or higher**
 - **Servlet container** (for web application deployment)
 - **Database server** (MySQL, Oracle, or HSQLDB)
 
 ### Documentation
 
-The platform includes automated API documentation generation using Javadoc for core packages. shopizer_v1:86-104 
+The platform includes automated API documentation generation using Javadoc for core packages.
 
 ## Notes
 
