@@ -48,8 +48,8 @@ import com.salesmanager.core.util.PropertiesUtil;
 import com.salesmanager.core.util.SpringUtil;
 import com.salesmanager.core.util.www.AuthenticateCustomerAction;
 import com.salesmanager.core.util.www.SessionUtil;
-import com.sun.image.codec.jpeg.JPEGCodec;
-import com.sun.image.codec.jpeg.JPEGImageEncoder;
+
+import javax.imageio.ImageIO;
 
 /**
  * Manages logon, logout and register functions
@@ -376,23 +376,18 @@ public class LogonAction extends AuthenticateCustomerAction {
 		try {
 
 			String captchaId = getServletRequest().getSession().getId();
-
-			CaptchaModule module = (CaptchaModule) SpringUtil
-					.getBean("captcha");
-
+			CaptchaModule module = (CaptchaModule) SpringUtil.getBean("captcha");
 			BufferedImage challenge = module.getImageForSessionId(captchaId,
-					getServletRequest());
+				getServletRequest());
 
-			// a jpeg encoder
-			JPEGImageEncoder jpegEncoder = JPEGCodec
-					.createJPEGEncoder(jpegOutputStream);
-			jpegEncoder.encode(challenge);
+			// Write image as JPEG using ImageIO
+			ImageIO.write(challenge, "jpeg", jpegOutputStream);
 		} catch (IllegalArgumentException e) {
 			getServletResponse().sendError(HttpServletResponse.SC_NOT_FOUND);
 			return;
 		} catch (CaptchaServiceException e) {
 			getServletResponse().sendError(
-					HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+				HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
 			return;
 		}
 

@@ -16,9 +16,7 @@ package com.salesmanager.core.util;
 
 import java.awt.AlphaComposite;
 import java.awt.Graphics2D;
-import java.awt.GraphicsConfiguration;
 import java.awt.RenderingHints;
-import java.awt.Transparency;
 import java.awt.RenderingHints.Key;
 import java.awt.image.BufferedImage;
 import java.awt.image.BufferedImageOp;
@@ -31,8 +29,6 @@ import java.util.Map;
 import javax.imageio.ImageIO;
 
 import org.apache.commons.configuration.Configuration;
-
-import sun.awt.image.BufferedImageGraphicsConfig;
 
 import com.salesmanager.core.entity.catalog.Product;
 import com.salesmanager.core.module.model.application.FileModule;
@@ -350,11 +346,9 @@ public class ProductImageUtil {
 	}
 
 	private BufferedImage createCompatibleImage(BufferedImage image) {
-		GraphicsConfiguration gc = BufferedImageGraphicsConfig.getConfig(image);
 		int w = image.getWidth();
 		int h = image.getHeight();
-		BufferedImage result = gc.createCompatibleImage(w, h,
-				Transparency.TRANSLUCENT);
+		BufferedImage result = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
 		Graphics2D g2 = result.createGraphics();
 		g2.drawRenderedImage(image, null);
 		g2.dispose();
