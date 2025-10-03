@@ -1,13 +1,3 @@
-# DeepWiki Q&A with Code Context for Repository: fbeawels/shopizer_v1
-
-
-## Q1
-
-Create a comprehensive summary of this application in Markdown
-
-
-### Answer
-
 # Shopizer v1 - E-commerce Platform
 
 ## Overview
