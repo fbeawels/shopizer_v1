@@ -1,6 +1,8 @@
-struts 2.1.6
+AXIS 1.4
 
-antlr uses 2.7.6 from hibernate
-commons.lang.2.3 from misc (for DateUtils)
+log4j-1.2.8.jar
+commons-logging-1.0.4.jar
 
-using commons 1.4 from misc
+From other sub libraries folders
+
+axis-ant not required at runtime

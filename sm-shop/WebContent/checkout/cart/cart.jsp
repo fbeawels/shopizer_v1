@@ -2,7 +2,7 @@
 <%@page pageEncoding="UTF-8"%>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
-<%@ taglib uri="/WEB-INF/classes/sm.tld" prefix="sm" %>
+<%@ taglib uri="/WEB-INF/tags/implicit.tld" prefix="sm" %>
 
 
 <%@ page import="com.salesmanager.core.util.*" %>

@@ -2,7 +2,7 @@
     pageEncoding="ISO-8859-1"%>
 <%@ page import="java.util.*" %>
 <%@ page import="com.salesmanager.core.constants.LabelConstants" %>
-<%@ taglib uri="/WEB-INF/classes/sm.tld" prefix="sm" %>
+<%@ taglib uri="/WEB-INF/tags/implicit.tld" prefix="sm" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>	
 <%@taglib prefix="s" uri="/struts-tags" %>	

@@ -2,7 +2,7 @@
 	<%@page pageEncoding="UTF-8"%>
 <%@ page import = "java.util.*" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
-<%@ taglib uri="/WEB-INF/classes/sm.tld" prefix="sm" %>
+<%@ taglib uri="/WEB-INF/tags/implicit.tld" prefix="sm" %>
 
 
 <s:if test="categories!=null && categories.size>0" >

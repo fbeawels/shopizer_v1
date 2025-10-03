@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<%@ taglib uri="/WEB-INF/classes/sm.tld" prefix="sm" %>
+<%@ taglib uri="/WEB-INF/tags/implicit.tld" prefix="sm" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ page import="com.salesmanager.core.constants.LabelConstants" %>

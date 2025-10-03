@@ -1,4 +1,4 @@
-<%@ taglib uri="/WEB-INF/classes/sm.tld" prefix="sm" %>
+<%@ taglib uri="/WEB-INF/tags/implicit.tld" prefix="sm" %>
 <%@ page import="com.salesmanager.core.util.UrlUtil" %>
 <%@taglib prefix="s" uri="/struts-tags" %>
 					<!-- THIS IS A PORTLET, NEEDS TO BE AN INCLUDE COMPONENT -->

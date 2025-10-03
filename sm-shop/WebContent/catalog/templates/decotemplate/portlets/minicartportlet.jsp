@@ -1,4 +1,4 @@
-<%@ taglib uri="/WEB-INF/classes/sm.tld" prefix="sm" %>
+<%@ taglib uri="/WEB-INF/tags/implicit.tld" prefix="sm" %>
 <%@taglib prefix="s" uri="/struts-tags" %>						
 
 
